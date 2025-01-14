@@ -1,0 +1,269 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body{
+    width: 320px;
+    margin: 0;
+    padding: 0;
+    font-family: "TT Lakes", sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.2px;
+    
+    
+}
+.header{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    width: 100%;
+    height: 83px;
+    padding-left: 24px;
+    padding-right: 24px;
+    z-index: 2;
+    
+   
+}
+.header__fix{
+    position: fixed;
+    z-index: 2;
+   width: 320px;
+}
+
+.wrapper{
+    display: flex;
+    margin-right: 24px;
+    width: 272px;
+    justify-content: space-between;
+    height: 83px;
+    align-items: center;
+    z-index: 2;
+}
+
+.header__wrapper{
+    width: 100%;
+    
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    z-index: 2;
+       
+}
+
+
+.header__list{
+    width: 100%;
+    list-style: none;
+    margin: 0; 
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 2;
+    
+}
+.header__wrapper > li:first-child{
+    margin-right: 17px;
+}
+
+.header__logo{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.button{
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 50%;
+    border: none;
+    margin: 0px;
+    
+}
+
+.header__search_button{
+    background-image: url(../image/search.png);
+    transition: filter 2s ease-in;
+}
+
+.header__menu_button{
+
+    background-image: url(../image/burger_menu.png); 
+    transition: filter 2s ease;
+
+}
+
+.header__drop_content{
+    display: none;
+    margin: 0; 
+    padding: 0;
+    width: 222px;
+    position: absolute;
+    top: 116px;
+    z-index:20;
+    height: 876px;
+    margin-bottom: 32px;
+    overflow-y: scroll;
+    scrollbar-width: 1px;
+    
+   
+}
+.header__drop_content::-webkit-scrollbar { display: none; }
+
+.header__sub_menu-hidden{
+    list-style: none;
+    margin: 0; 
+    padding: 0;
+    width: 222px;
+    z-index:20;
+}
+
+
+
+.header__sub_wrapper_first > .header__sub_item{
+    margin-bottom: 32px;
+}
+
+.header__sub_wrapper_first > .header__sub_item:first-child::before{
+    content: "";
+    display: block;
+    border-radius: 25%;
+    width: 4px;
+    height: 40px;
+    background: rgb(65, 246, 215);  
+    margin-right: 12px;
+    position: absolute;
+    left: -15px;
+    top: -9px;
+    z-index: 40;
+}
+
+
+.header__sub_link{
+    
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: #1B1C21;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+
+
+}
+span{
+    font-size: 24px;
+    color: #1B1C21;
+    line-height: 32px;
+    letter-spacing: -0.6px;
+}
+.header__sub_wrapper_first{
+    margin-bottom: 268px;
+}
+.header__sub_wrapper_second{
+    margin:0px;
+    padding: 0px;
+    display: flex;
+    width: 196px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+   
+}
+
+.header__sub_wrapper_button{
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 16px;
+    
+}
+.header__sub_wrapper_button > li{
+    margin-right: 16px;
+}
+.header__sub_wrapper_contact > li:first-child{
+    margin-bottom: 12px;
+}
+.header__phone_button{
+    background-image: url(../image/chat\ copy.png);
+    transition: filter 2s ease-out;
+    
+
+}
+
+.header__chat_button{
+    background-image: url(../image/chat.png);
+    transition: filter 2s ease;
+}
+
+.header__profile_button{
+    background-image: url(../image/profile.png);
+    transition: filter 2s ease;
+}
+
+.header__sub_wrapper_language{
+    display: flex;
+    margin-bottom: 32px;
+        
+}
+
+.header__sub_input label{
+    display: inline-block;
+    cursor: pointer;
+    margin-right: 7px;
+    color: black;
+    width: 25px;
+}
+
+.header__sub_input input{
+    display: none;
+}
+
+.header__sub_wrapper_language-rus input:checked ~ label{
+    color: #7E7E82;
+}
+
+.header__sub_wrapper_language-en input:checked ~ label{
+    color: #7E7E82;
+}
+
+.header__sub_wrapper_language-ch input:checked ~ label{
+    color: #7E7E82;
+}
+
+
+  
+
+
+
+.header__drop:hover .header__drop_content, .header__drop:focus .header__drop_content, .header__drop:active .header__drop_content{
+    display: block;
+}
+    
+.header__menu_button:hover{
+    background-image: url(../image/burger.png); 
+    filter: grayscale(100%);
+     
+}
+.header__profile_button:hover{
+    filter: grayscale(100%);
+}
+
+.header__chat_button:hover{
+    filter: grayscale(100%);
+}
+
+.header__phone_button:hover{
+    filter: grayscale(100%);
+}
+
+.header__search_button:hover{
+    filter: grayscale(100%);
+}
+
+.header__sub_wrapper_first .header__sub_link:hover{
+    color: #7E7E82;
+   
+}
