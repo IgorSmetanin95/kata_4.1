@@ -116,7 +116,7 @@ body{
   
   .aside__menu ul li:hover::before {
     display: inline-block;
-    background-image: url('/image/highlightSmall.png');
+    background-image: url('../image/highlightSmall.png');
     vertical-align: middle;
     content: '';
     position: absolute;
