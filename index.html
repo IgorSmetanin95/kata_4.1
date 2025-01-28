@@ -8,95 +8,92 @@
     <title>4.1</title>
 </head>
 <body>
-    <header class="header">
-        <div class="header__fix">
-            <div class="wrapper">
-        <ul class="header__list">
-
-            <div class="header__wrapper">
-
-                <li class="header__item">
-
-                <div class="header__drop">
-                 <button class="header__menu_button button" aria-label="Открыть меню"> </button>
-                    <div class="header__drop_content">
-                    <ul class="header__sub_menu-hidden">
-                        
-                        <div class="header__sub_wrapper_first">
-                            <li class="header__sub_item"><a class="header__sub_link" href="#">Ремонт техники</a></li>
-                            <li class="header__sub_item"><a class="header__sub_link" href="#">Услуги и сервисы</a></li>
-                            <li class="header__sub_item"><a class="header__sub_link" href="#">Корпоротивным клиентам</a></li>
-                            <li class="header__sub_item"><a class="header__sub_link" href="#">Продавцам техники</a></li>
-                            <li class="header__sub_item"><a class="header__sub_link" href="#">Партнерам</a></li>
-                            <li class="header__sub_item"><a class="header__sub_link" href="#">Производителям</a></li>
-                            <li class="header__sub_item"><a class="header__sub_link" href="#">Наши сервисные центры</a></li>
-                            <li class="header__sub_item"><a class="header__sub_link" href="#">Контакты</a></li>
-                        </div>
-
-                        <div  class="header__sub_wrapper_second">
-
-                            <div class="header__sub_wrapper_button">
-
-                                <li class="header__sub_item">
-                                    <button class="header__phone_button button"></button>
-                                </li>
-
-                                <li class="header__sub_item">
-                                    <button class="header__chat_button button"></button>
-                                </li>
-
-                                <li class="header__sub_item">
-                                    <button class="header__profile_button button"></button>
-                                </li>
-                                
-                            </div>
-
-                            <div class="header__sub_wrapper_contact">
-                                <li class="header__sub_item"><a class="header__sub_link" href="#">mail@cps.com</a></li>
-                                <li class="header__sub_item"><span><b>8 800 890 8900</b></span></li>
-                            </div>
-
-                        </div>
-
-                        <div class="header__sub_wrapper_language">
-                            
-                            <div class="header__sub_wrapper_language-rus header__sub_input">
-                                
-                                    <input type="radio" name="language" id="language-rus">
-                                    <label for="language-rus"> RU </label>
-                                
-                            </div>
-
-                            <div class="header__sub_wrapper_language-en header__sub_input">
-                               
-                                    <input type="radio" name="language" id="language-eng" >
-                                    <label for="language-eng">EN</label>
-                               
-                            </div>
-
-                            <div class="header__sub_wrapper_language-ch header__sub_input">
-                               
-                                    <input type="radio" name="language" id="language-ch" >
-                                    <label for="language-ch">CH</label>
-                            </div>  
-                            
-                       
-                        </div>
-                        </ul>
-                    </div>
+            <!-- боковое меню/бургер меню -->
+            <div class="aside">
+              <div class="aside__wrapper">
+                <div class="aside__header">
+                  <button class="aside__button aside__close">
+                    <img src="image/burger.png" alt="Закрыть меню" width="40" />
+                  </button>
+      
+                  <div class="aside__logo">
+                    <a href="#"><img src="image/Group (3).png" alt="Логотип фирмы" /></a>
+                  </div>
+      
+                  <button class="aside__button">
+                    <img src="image/search.png" alt="Поиск" />
+                  </button>
                 </div>
+      
+                <nav class="aside__menu">
+                  <ul>
+                    <li><a href="#">Ремонт техники</a></li>
+                    <li><a href="#">Услуги и сервисы</a></li>
+                    <li><a href="#">Корпоративным клиентам</a></li>
+                    <li><a href="#">Продавцам техники</a></li>
+                    <li><a href="#">Партнёрам</a></li>
+                    <li><a href="#">Производителям</a></li>
+                    <li><a href="#">Наши сервисные центры</a></li>
+                    <li><a href="#">Контакты</a></li>
+                  </ul>
+                </nav>
+      
+                <div class="aside__footer">
+                  <div class="aside__actions">
+                    <ul>
+                      <li>
+                        <button
+                          class="aside__button aside__button__callBack-chat-second"
+                        >
+                          <img
+                            src="image/chat copy.png"
+                            alt="Сделать звонок"
+                            id="call_second"
+                          />
+                        </button>
+                      </li>
+      
+                      <li>
+                        <button
+                          class="aside__button aside__button__feedBack-chat-second"
+                        >
+                          <img
+                            src="image/chat.png"
+                            alt="Написать в чат"
+                            id="chat_second"
+                          />
+                        </button>
+                      </li>
+      
+                      <li>
+                        <button class="aside__button">
+                          <img src="image/profile.png" alt="Профиль пользователя" />
+                        </button>
+                      </li>
+                    </ul>
+                  </div>
+      
+                  <div class="aside__mail">
+                    <a href="mailto:mail@cps.com">mail@cps.com</a>
+                  </div>
+      
+                  <div class="aside__phone">
+                    <a href="tel:88008908900"><b>8 800 890 89 00</b></a>
+                  </div>
+      
+                  <div class="aside__language">
+                    <ul>
+                      <li>
+                        <button class="aside__button aside__button_checked">RU</button>
+                      </li>
+      
+                      <li><button class="aside__button">EN</button></li>
+                      <li><button class="aside__button">CH</button></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+      
 
-                </li>
-
-                 <li class="header__item"> <a class="header__logo" href="#"> <img src="image\Group (3).png" alt="логотип компании"></a> </li> 
-            </div>
-            
-           <li class="header__item"> <button class="header__search_button button" aria-label="Открыть поиск"> </button> </li>
-            
-            </ul>
-        </div>
-    </div>
-    </header>
-    
 </body>
 </html>
